@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primaryColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="?attr/actionBarSize"
+    android:elevation="4dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/icons"
+            android:layout_height="@dimen/icons"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_huella"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/petegram"
+            android:textSize="@dimen/textSizeTv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageBtnStar"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvCountFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/textSizeTv"
+            android:layout_marginRight="@dimen/marginItem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageBtnStar"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+
+            android:background="@null"
+            android:id="@+id/imageBtnStar"
+            android:layout_width="@dimen/icons"
+            android:layout_height="@dimen/icons"
+            android:layout_marginRight="@dimen/marginItem"
+            android:src="@drawable/ic_star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </ImageButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.appcompat.widget.Toolbar>

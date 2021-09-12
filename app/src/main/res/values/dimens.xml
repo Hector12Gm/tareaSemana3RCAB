@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="icons">30dp</dimen>
+    <dimen name="textSizeTv">20dp</dimen>
+    <dimen name="marginItem">4dp</dimen>
+    <dimen name="marginItemList">10dp</dimen>
+    <dimen name="imgCardH">200dp</dimen>
+</resources>
