@@ -1,4 +1,4 @@
-package com.example.mascotas;
+package com.example.mascotas.pojo;
 
 import java.util.ArrayList;
 

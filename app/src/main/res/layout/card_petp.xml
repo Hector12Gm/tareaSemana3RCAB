@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:outlineSpotShadowColor="@color/secondaryLightColor"
-    android:layout_margin="@dimen/marginItemList"
+    android:layout_margin="1dp"
     android:layout_height="wrap_content">
 <LinearLayout
     android:orientation="vertical"
@@ -38,35 +38,27 @@
             android:id="@+id/tvPetnameP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="Nombre de la mascota"
             android:textSize="@dimen/textSizeTv"
-            android:fontFamily="@font/roboto_bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnImageBoneP"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.545" />
+           />
 
         <TextView
 
             android:id="@+id/tvLikesPetItemP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_marginStart="4dp"
             android:text="0"
-            android:layout_marginRight="@dimen/marginItem"
             android:textSize="@dimen/textSizeTv"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imgBtnBoneLike"
-            app:layout_constraintTop_toTopOf="parent" />
-        <ImageButton
-            android:background="@null"
-            android:id="@+id/imgBtnBoneLike"
-            android:layout_width="@dimen/icons"
-            android:layout_height="@dimen/icons"
-            android:src="@drawable/ic_dog_bone_svgrepo_com"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/tvPetnameP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.636" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
 </androidx.cardview.widget.CardView>

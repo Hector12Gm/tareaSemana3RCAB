@@ -1,7 +1,6 @@
-package com.example.mascotas;
+package com.example.mascotas.adapters;
 
 import android.app.Activity;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.mascotas.pojo.Datos;
+import com.example.mascotas.pojo.Pet;
+import com.example.mascotas.R;
 
 import java.util.ArrayList;
 
@@ -28,7 +31,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewAntigua> {
 
     public  Adaptador(ArrayList<Pet> mascotas){
         this.mascotas=mascotas;
-        this.like=false;
+
     }
     @NonNull
     @Override
@@ -71,10 +74,10 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewAntigua> {
 
         public ViewAntigua(@NonNull View itemView) {
             super(itemView);
-            nombrePet = (TextView) itemView.findViewById(R.id.tvPetname);
-            likesPet = (TextView)  itemView.findViewById(R.id.tvLikesPetItem);
+            nombrePet = (TextView) itemView.findViewById(R.id.tvPetnameP);
+            likesPet = (TextView)  itemView.findViewById(R.id.tvLikesPetItemP);
             imgBtnLike = (ImageButton) itemView.findViewById(R.id.imgBtnBoneLike);
-            imgPet = (ImageView) itemView.findViewById(R.id.imgPet);
+            imgPet = (ImageView) itemView.findViewById(R.id.imgPetP);
 
         }
     }

@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.mascotas.adapters.Adaptador;
+import com.example.mascotas.pojo.Datos;
+
 public class pet_favs extends AppCompatActivity {
 
     @Override

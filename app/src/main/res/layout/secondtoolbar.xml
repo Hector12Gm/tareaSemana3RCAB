@@ -33,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
             android:text="@string/petegram"
             android:textSize="@dimen/textSizeTv"
             app:layout_constraintBottom_toBottomOf="parent"

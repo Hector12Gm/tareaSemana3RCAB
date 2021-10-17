@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/primaryColor"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-
+    app:layout_scrollFlags="scroll|enterAlways"
     android:layout_height="?attr/actionBarSize"
     android:elevation="4dp"
     >
@@ -32,6 +33,7 @@
             android:layout_gravity="center"
             android:text="@string/petegram"
             android:textSize="@dimen/textSizeTv"
+            android:fontFamily="@font/roboto_bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageBtnStar"
             app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -44,6 +46,7 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:textSize="@dimen/textSizeTv"
+            android:fontFamily="@font/roboto_bold"
             android:layout_marginRight="@dimen/marginItem"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageBtnStar"
